@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+  
+    <style>
+        h1 {
+        text-align: center;
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+        #top_menu {
+        display: flex;
+        justify-content: center;
+    }
+    #top_menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    #top_menu li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+    #top_menu li:last-child {
+        margin-right: 0;
+    }
+    #top_menu li a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    #top_menu li a:hover {
+        background-color: #555;
+    }
+        body {height: 4000px;}
+        #scroll-to-top-button {position: fixed; bottom: 50px; right: 50px;}
+    </style>
+</head>
+<header>
+    <section id="top">
+        <div style="display: flex; justify-content: center; align-items: center;">
+        <a  href="indextest.html"><img src="imges/Doom.jpg"></a>
+        </div>
+        <nav id="top_menu">
+            <ul>
+                <li><a href="#home">홈</a></li>
+                <li><a href="#news">게임소개</a></li>
+                <li><a href="#contact">콘텐츠</a></li>
+                <li><a href="#about">자료</a></li>
+              </ul>
+        </nav>
+<h1><img src="imges/Doom main.jfif"></h1>
+    
+</header>
+<body>
+    <button id="scroll-to-top-button"><img src="imges/doombutton.gif"></button>
+    <script>
+        function scrollToTop(){
+            window.scrollTo({top: 0, behavior:'smooth'});
+        }   
+        const button = document.querySelector('#scroll-to-top-button');
+        button.addEventListener('click', scrollToTop);
+    </script>
+</body>
+</html>
